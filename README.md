@@ -25,7 +25,7 @@ docker-compose up --build
 You can also provide specific url, browser, and group to run tests a command like this:
 
 ```
-BASE_URL=hhttps://www.caesars.com BROWSER=chromium GROUP=@smoke docker-compose up --build
+BASE_URL=https://www.caesars.com BROWSER=chromium GROUP=@smoke docker-compose up --build
 ```
 
 ### Bash script

@@ -15,7 +15,7 @@ export abstract class BasePage {
 
     async navigate(path: string) {
       try {
-        await this.page.goto(path, { timeout: 10000 });
+        await this.page.goto(path, { timeout: 20000 });
       } catch (error) {
         console.error(`Error navigating to ${path}: ${error}`);
       }

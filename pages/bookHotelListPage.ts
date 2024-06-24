@@ -21,7 +21,7 @@ export class BookHotelListPage extends BasePage {
     }
 
     async assertHotelListIsVisible() {
-        await expect(this.hotelList).toBeVisible();
+        await expect(this.hotelList).toBeVisible( { timeout: 20000 } );
     }
 
     async assertBookingSearchResultsIsNotEmpty() {
